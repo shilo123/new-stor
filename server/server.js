@@ -37,6 +37,8 @@ app.post("/reqData", async (req, res) => {
   }
   res.json(data);
 });
+{
+}
 app.post("/ashrai", async (req, res) => {
   console.log(req.body);
   res.send("ok");

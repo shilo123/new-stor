@@ -63,6 +63,8 @@ export default {
     up(dogy) {
       this.products = this.productsG;
       this.products = dogy;
+      {
+      }
     },
     addcarD(id) {
       let pro = this.products.find((e) => {

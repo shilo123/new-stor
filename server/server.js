@@ -6,7 +6,7 @@ let mongo = require("mongodb").MongoClient;
 const ObjectId = require("mongodb").ObjectId;
 const bodyParser = require("body-parser");
 const fs = require("fs");
-// const axios = require("axios");
+const axios = require("axios");
 app.use(bodyParser.json());
 app.use(cors());
 let collection = null;

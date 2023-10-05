@@ -1,3 +1,4 @@
+//server.js
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
@@ -40,6 +41,7 @@ app.post("/reqData", async (req, res) => {
 // git add .
 // git commit -am ";"
 // git push -u origin main
+
 app.post("/ashrai", async (req, res) => {
   console.log(req.body);
   res.send("ok");

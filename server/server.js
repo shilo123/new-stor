@@ -24,6 +24,7 @@ let collection = null;
     console.log("tovim", error);
   }
 })();
+app.use(express.static(path.join(__dirname, "dist")));
 
 app.get("/", async (req, res) => {
   let data = await collection.find({}).toArray();

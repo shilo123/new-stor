@@ -17,6 +17,6 @@
     "fs": "^0.0.1-security",
     "mongodb": "^6.1.0",
     "nodemon": "^3.0.1",
-    "objectid": "^3.2.1"
+    "objectid": "^2.3.0"
   }
 }

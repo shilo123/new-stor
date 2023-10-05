@@ -6,15 +6,12 @@ let mongo = require("mongodb").MongoClient;
 const ObjectId = require("mongodb").ObjectId;
 const bodyParser = require("body-parser");
 const fs = require("fs");
-const axios = require("axios");
+// const axios = require("axios");
 app.use(bodyParser.json());
 app.use(cors());
 let collection = null;
 (async () => {
   //mongodb://localhost:27017
-  //mongodb+srv://hazshilo:1234@cluster1.ifbyw.mongodb.net/
-  //mongodb+srv://hazshilo:1234@cluster1.ifbyw.mongodb.net/?tls=true
-  //mongodb+srv://hazshilo:1234@cluster1.ifbyw.mongodb.net/?retryWrites=true&w=majority
   try {
     const url =
       "mongodb+srv://hazshilo:1234@cluster1.ifbyw.mongodb.net/?tlsAllowInvalidCertificates=true";

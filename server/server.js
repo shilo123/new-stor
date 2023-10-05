@@ -43,7 +43,6 @@ app.post("/ashrai", async (req, res) => {
   console.log(req.body);
   res.send("ok");
 });
-
 app.listen(port, () => {
   console.log(`http://localhost:${port}/`);
 });

@@ -44,9 +44,7 @@ export default {
   mounted() {
     this.loading = true;
     this.$ax.get(URLSERVERA).then((res) => {
-      // console.log(res.data);
       this.$ax.post(URL + "reqData", res.data.products).then((res) => {
-        // console.log(res.data);
         if (res.data.lenght === 0) location.reload();
         this.products = res.data;
         this.productsG = this.products;

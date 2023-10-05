@@ -37,8 +37,9 @@ app.post("/reqData", async (req, res) => {
   }
   res.json(data);
 });
-{
-}
+// git add .
+// git commit -am ";"
+// git push -u origin main
 app.post("/ashrai", async (req, res) => {
   console.log(req.body);
   res.send("ok");

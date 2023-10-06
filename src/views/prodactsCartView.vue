@@ -1,5 +1,11 @@
 <template>
-  <div>
+  <div
+    style="width: 100%; height: 100%; position: absolute"
+    v-loading="loading"
+    element-loading-text="Loading..."
+    element-loading-spinner="el-icon-loading"
+    element-loading-background="rgba(0, 0, 0, 0.8)"
+  >
     <Menu :productso="products" :productsG="productsG" :ArrIdso="ArrIds"></Menu>
     <el-row :gutter="13">
       <el-col :span="8" v-for="prod in products" :key="prod._id">
@@ -94,6 +100,7 @@ export default {
 
   data() {
     return {
+      loading: false,
       showF: true,
       products: [],
       productsG: [],
@@ -175,6 +182,7 @@ export default {
     };
   },
   mounted() {
+    this.loading = true;
     this.products = this.productsG;
     this.ArrIds = [];
     let id = this.$route.params.id;
@@ -222,6 +230,7 @@ export default {
       });
       this.sum = sum;
       console.log("this.products", this.products);
+      this.loading = false;
     });
   },
 

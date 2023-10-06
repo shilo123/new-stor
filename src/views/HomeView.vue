@@ -1,7 +1,7 @@
 <!-- homeView -->
 <template v-if="shogen">
   <div
-    style="width: 100%; height: 100%"
+    style="width: 100%; height: 100%; position: absolute"
     v-loading="loading"
     element-loading-text="Loading..."
     element-loading-spinner="el-icon-loading"

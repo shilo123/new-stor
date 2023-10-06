@@ -35,7 +35,7 @@
             <div>
               <el-select
                 v-model="selectC"
-                placeholder="Search by..."
+                placeholder="Search by"
                 @input="selecto()"
               >
                 <el-option

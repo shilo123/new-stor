@@ -181,7 +181,7 @@ export default {
     id = id.split(",");
     console.log("id", id);
     this.ArrIds = id;
-    this.$ax.get(URL).then((res) => {
+    this.$ax.get(URL + "shoko").then((res) => {
       this.products = res.data;
       this.productsG = res.data;
 

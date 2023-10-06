@@ -10,7 +10,6 @@ const fs = require("fs");
 const axios = require("axios");
 app.use(bodyParser.json());
 app.use(cors());
-
 let collection = null;
 (async () => {
   //mongodb://localhost:27017
@@ -24,9 +23,9 @@ let collection = null;
     console.log("tovim", error);
   }
 })();
-app.use(express.static(path.join(__dirname, "dist")));
+app.use("/", express.static("src"));
 
-app.get("/", async (req, res) => {
+app.get("/shoko", async (req, res) => {
   let data = await collection.find({}).toArray();
   res.json(data);
 });

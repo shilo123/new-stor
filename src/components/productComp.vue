@@ -44,7 +44,9 @@
             :score-template="`${rating.rating} points`"
           ></el-rate>
         </el-col>
-        <el-col :span="24">Amount: {{ count }}</el-col>
+        <el-col :span="24" v-if="$route.path !== '/'"
+          >Amount: {{ count }}</el-col
+        >
       </el-row>
     </div>
   </div>
